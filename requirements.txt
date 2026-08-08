@@ -1,0 +1,32 @@
+# ── Core inference dependencies ─────────────────────────────────────────────
+torch
+transformers
+accelerate
+matplotlib
+streamlit
+
+# ── PMPD benchmarking dependency (CC BY-NC-SA 4.0, Samsung Labs) ────────────
+# Used in test_graph.py, test_graph_performance.py, validate.py as a
+# benchmarking reference. Source: https://github.com/SamsungLabs/PMPD
+# Not vendored — fetched directly from upstream at install time.
+pmpd @ git+https://github.com/SamsungLabs/PMPD.git
+
+# ── PMPD's own required dependencies (needed when using pmpd above) ─────────
+# AnyPrecision LLM quantisation backend
+git+https://github.com/SNU-ARC/any-precision-llm.git
+auto_gptq
+datasets
+flash1dkmeans
+fschat
+hyperopt
+lm_eval
+numba
+numpy
+PyYAML
+ray
+scikit_learn
+setuptools
+shortuuid
+tqdm
+bert-score
+git+https://github.com/google-research/bleurt.git

@@ -1,0 +1,32 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Build/egg artifacts
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+nohup.out
+
+# Data
+data*/
+
+# Model weights — ignore binaries and subdirectories, but keep source files
+models/*.bin
+models/*.safetensors
+models/*.pt
+models/*.gguf
+models/*.ggml
+models/*/
+!models/static_memory.py
+
+# AnyPrecision artefacts
+any-precision-llm*/
+anyprec-*/
+
+# Cache
+cahce*/
